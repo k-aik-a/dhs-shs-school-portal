@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+<title>Dapdap High School-Senior High School Enrollment Form for S.Y. 2024-2025</title>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+<style>
+html, body {
+min-height: 100%;
+}
+body, div, form, input, select, p { 
+padding: 0;
+margin: 0;
+outline: none;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 14px;
+color: #3E0B13;
+}
+h1 {
+margin: 0;
+font-weight: 400;
+}
+h3 {
+margin: 12px 0;
+color: #741B27;
+}
+.main-block {
+display: flex;
+justify-content: center;
+align-items: center;
+background: #F9F9F9;
+}
+form {
+width: 100%;
+padding: 20px;
+}
+fieldset {
+border: none;
+border-top: 1px solid #741B27;
+}
+.account-details, .personal-details {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.account-details >div, .personal-details >div >div {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+}
+.account-details >div, .personal-details >div, input, label {
+width: 100%;
+}
+label {
+padding: 0 5px;
+text-align: right;
+vertical-align: middle;
+}
+input {
+padding: 5px;
+vertical-align: middle;
+}
+.checkbox {
+margin-bottom: 10px;
+}
+select, .children, .gender, .bdate-block {
+width: calc(100% + 26px);
+padding: 5px 0;
+}
+select {
+background: transparent;
+}
+.gender input {
+width: auto;
+} 
+.gender label {
+padding: 0 5px 0 0;
+} 
+.bdate-block {
+display: flex;
+justify-content: space-between;
+}
+.birthdate select.day {
+width: 35px;
+}
+.birthdate select.mounth {
+width: calc(100% - 94px);
+}
+.birthdate input {
+width: 38px;
+vertical-align: unset;
+}
+.checkbox input, .children input {
+width: auto;
+margin: -2px 10px 0 0;
+}
+.checkbox a {
+color: #741B27;
+}
+.checkbox a:hover {
+color: #3E0B13;
+}
+button {
+width: 90%;
+padding: 15px 0;
+margin: 10px auto;
+border-radius: 5px; 
+border: none;
+background: #741B27; 
+font-size: 14px;
+font-weight: 600;
+color: #fff;
+}
+button:hover {
+background: #3E0B13;
+}
+@media (min-width: 568px) {
+.account-details >div, .personal-details >div {
+width: 50%;
+}
+label {
+width: 40%;
+}
+input {
+width: 60%;
+}
+select, .children, .gender, .bdate-block {
+width: calc(60% + 16px);
+}
+}
+
+
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="main-block">
+<form action="/">
+    <img class="img1" src="../images/school/OIP.png" alt="" width="100" height="100" href="../index.html">
+<h1><b>Dapdap High School-Senior High School Enrollment Form for S.Y. 2024-2025</b></h1>
+<fieldset>
+<legend>
+
+<h3>Learner Information</h3>
+</legend>
+<div class="account-details">
+
+<div><label>PSA Birth Certificate No.<br>(if available upon registration)</label><input type="text" name="name" required></div>
+<div><label>Learner Reference No.</label><input type="text" name="name" required></div>
+<div><label>Last Name</label><input type="text" name="name" required></div>
+
+<div class="birthdate">
+    <label>Birthdate*</label>
+    <div class="bdate-block">
+    <select class="day" required>
+    <option value=""></option>
+    <option value="01">01</option>
+    <option value="02">02</option>
+    <option value="03">03</option>
+    <option value="04">04</option>
+    <option value="05">05</option>
+    <option value="06">06</option>
+    <option value="07">07</option>
+    <option value="08">08</option>
+    <option value="09">09</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+    <option value="31">31</option>
+    </select>
+    <select class="month" required>
+    <option value=""></option>
+    <option value="January">January</option>
+    <option value="February">February</option>
+    <option value="March">March</option>
+    <option value="April">April</option>
+    <option value="May">May</option>
+    <option value="June">June</option>
+    <option value="July">July</option>
+    <option value="August">August</option>
+    <option value="September">September</option>
+    <option value="October">October</option>
+    <option value="November">November</option>
+    <option value="December">December</option>
+    </select>
+    <input type="text" name="name" required>
+    </div>
+    </div>
+
+<div><label>First Name</label><input type="text" name="name" required></div>
+
+<div>
+<label>Sex:</label>
+<div class="gender">
+<input type="radio" value="none" id="male" name="gender" required/>
+<label for="male" class="radio">Male</label>
+<input type="radio" value="none" id="female" name="gender" required/>
+<label for="female" class="radio">Female</label>
+</div>
+</div>
+
+<div><label>Middle Name</label><input type="text" name="name" required></div>
+
+<div><label>Age</label><input type="text" name="name" required></div>
+<div><label>Extension Name (e.g. Jr., III if applicable)</label><input type="text" name="name" required></div>
+<div><label>Place of Birth (Municipality/City)</label><input type="text" name="name" required></div>
+
+<div><label>Mother Tongue</label><input type="text" name="name" required></div>
+
+<div>
+    <label>Belonging to any Indigenous People (IP) Community/Indigenous Cultural Community:</label>
+    <div class="gender">
+    <input type="radio" value="none" id="yes" name="ip" required/>
+    <label for="male" class="radio">Yes</label>
+    <input type="radio" value="none" id="no" name="ip" required/>
+    <label for="female" class="radio">No</label>
+    <label><i>If Yes, please specify:</i></label><input type="text" name="name">
+    </div>
+    </div>
+
+    <div>
+        <label>Is your family a beneficary of 4Ps?</label>
+        <div class="gender">
+        <input type="radio" value="none" id="yes" name="ip" required/>
+        <label for="male" class="radio">Yes</label>
+        <input type="radio" value="none" id="no" name="ip" required/>
+        <label for="female" class="radio">No</label>
+        <label><i>If Yes, put the 4Ps Household ID Number</i></label><input type="text" name="name">
+        </div>
+        </div>
+
+</div>
+</fieldset>
+
+<fieldset>
+<legend>
+</legend>
+<h3>Is the child a Learner with Disability?</h3>
+<div class="personal-details">
+<div>
+
+    <div>
+        <label>Is the child a Learner with Disability?</label>
+        <div class="gender">
+        <input type="radio" value="none" id="yes" name="ip" required/>
+        <label for="male" class="radio">Yes</label>
+        <input type="radio" value="none" id="no" name="ip" required/>
+        <label for="female" class="radio">No</label>
+        </div>
+    </div>
+        <div>
+        <label><i>If Yes, specify the type of disability:</i></label>
+        </div>
+        </div>
+
+ 
+            <div class="checkbox">
+            <input type="checkbox" name="checkbox"><span>Visual Impairment</span>
+            <input type="checkbox" name="checkbox"><span>Hearing Impairment</span>
+            <input type="checkbox" name="checkbox"><span>Learning Disability</span>
+            <input type="checkbox" name="checkbox"><span>Intellectual Disability</span>
+             
+            <div class="checkbox">
+            <input type="checkbox" name="checkbox"><span>a. blind</span>
+            <input type="checkbox" name="checkbox"><span>Autism Spectrum Disorder</span>
+            <input type="checkbox" name="checkbox"><span>Emotional-Behavioral Disorder</span>
+            <input type="checkbox" name="checkbox"><span>Orthopedic/Physical Handicap</span>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" name="checkbox"><span>b. low vision</span>
+                <input type="checkbox" name="checkbox"><span>Speech/Language Disorder</span>
+                <input type="checkbox" name="checkbox"><span>Cerebral Palsy</span>
+                <input type="checkbox" name="checkbox"><span>Special Health Problem/Chronic Disease</span>
+            </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" name="checkbox"><span>Multiple Disorder</span>
+                    <input type="checkbox" name="checkbox"><span>a. Cancer</span>
+            </div>
+            </div>
+
+</fieldset>
+
+<fieldset>
+    <legend>
+    </legend>
+    <div>
+    <h3>Permanent Address</h3>
+    <div class="account-details">
+        <div><label>House No.</label><input type="text" name="name" required></div>
+        <div><label>Sitio/Street Name</label><input type="text" name="name" required></div>
+        <div><label>Barangay</label><input type="text" name="name" required></div>
+        <div><label>Municipality/City</label><input type="text" name="name" required></div>
+        <div><label>Province</label><input type="text" name="name" required></div>
+        <div><label>Country</label><input type="text" name="name" required></div>
+        <div><label>Zip Code</label><input type="text" name="name" required></div>
+        </div>
+    </fieldset>
+
+<fieldset>
+<legend>
+<h3>Parent's or Guardian's Information</h3>
+</legend>
+<h3>Father's Name</h3>
+<div class="account-details">
+    <div><label>Last Name</label><input type="text" name="name" required></div>
+    <div><label>First Name</label><input type="text" name="name" required></div>
+    <div><label>Middle Name</label><input type="text" name="name" required></div>
+    <div><label>Contact Number</label><input type="text" name="name" required></div>
+</div>
+
+    <h3>Mother's Maiden Name</h3>
+    <div class="account-details">
+        <div><label>Last Name</label><input type="text" name="name" required></div>
+        <div><label>First Name</label><input type="text" name="name" required></div>
+        <div><label>Middle Name</label><input type="text" name="name" required></div>
+        <div><label>Contact Number</label><input type="text" name="name" required></div>
+    </div>
+
+        <h3>Legal Guardian's Name</h3>
+        <div class="account-details">
+            <div><label>Last Name</label><input type="text" name="name" required></div>
+            <div><label>First Name</label><input type="text" name="name" required></div>
+            <div><label>Middle Name</label><input type="text" name="name" required></div>
+            <div><label>Contact Number</label><input type="text" name="name" required></div>
+        </div>
+</fieldset>
+
+<fieldset>
+    <legend>
+    <h3>For Returning Learner (Balik-Aral) and Those Who Will Transfer/Move In</h3>
+    </legend>
+    <div class="account-details">
+        <div><label>Last Grade Level Completed</label><input type="text" name="name" required></div>
+        <div><label>Last School Year Attended</label><input type="text" name="name" required></div>
+        <div><label>Last School Attended</label><input type="text" name="name" required></div>
+        <div><label>School ID</label><input type="text" name="name" required></div>
+
+
+    </fieldset>
+
+    <fieldset>
+        <legend>
+        <h3>For Learners in Senior High School</h3>
+        </legend>
+        <div class="account-details">
+        <div> <label>Semester:</label>
+        <div class="gender">
+        <input type="radio" value="none" id="yes" name="ip" required/>
+        <label for="male" class="radio">1st</label>
+        <input type="radio" value="none" id="no" name="ip" required/>
+        <label for="female" class="radio">2nd</label>
+        </div>
+        </div>
+
+        <div>
+        <div><label>Track</label><input type="text" name="name" required></div>
+        <div><label>Strand</label><input type="text" name="name" required></div>
+        </div>
+        </div>
+        </div>
+
+    </fieldset>
+    
+    <fieldset>
+        <legend>
+        </legend>
+        <h3>If school will implement other distance learning modalities aside from face-to-face instruction, what would you prefer for your child?</h3>
+        <div class="checkbox">
+        <input type="checkbox" name="checkbox"><span>Modular (Print)</span>
+        <input type="checkbox" name="checkbox"><span>Modular (Digital)</span>
+        <input type="checkbox" name="checkbox"><span>Online</span>
+        <input type="checkbox" name="checkbox"><span>Educational Television</span>
+        <input type="checkbox" name="checkbox"><span>Radio-Based Instruction</span>
+        <input type="checkbox" name="checkbox"><span>Homeschooling</span>
+        <input type="checkbox" name="checkbox"><span>Blended</span>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>
+        <h3>Upload Files</h3>
+        </legend>
+        <div class="account-details">
+        <label>Grade 10/11/12 Card:</label>
+        <div><input type="file" id="myFile" name="filename"></div>
+        <label>Birth Certificate:</label>
+        <div><input type="file" id="myFile" name="filename"></div>
+        </div>
+    </fieldset>
+
+<div class="account-details">
+<div><button type="submit" href="/">Submit</button></div>
+<div><button type="reset" href="/">Reset</button></div>
+</div>
+
+</form>
+</div> 
+</body>
+</html>
+

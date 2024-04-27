@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../images/school/OIP.png"/>
+    <title>Dapdap High School-Senior High School | Enrollment Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="../../images/school/logos.png">
+        <h2>Enrollment Form for S.Y. 2024-2025</h2>
+        <form action="enrollment_process.php" method="post">
+        <h3>Learner Information</h3>
+
+            <div class="form-group">
+                <label for="lrn">LRN (Learner Reference Number):</label>
+                <input type="number" id="lrn" name="lrn" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="grade">Grade to Enroll:</label>
+                <select id="grade" name="grade" required>
+                    <option value="1">Grade 11</option>
+                    <option value="2">Grade 12</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="schoolyear">School Year:</label>
+                <input type="text" id="schoolyear" name="schoolyear" required>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" required>
+            </div>
+
+            <div class="form-group">
+                <label>Sex:</label><br>
+                <input type="radio" id="male" name="sex" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="sex" value="female" required>
+                <label for="female">Female</label>
+            </div>
+
+            <div class="form-group">
+                <label for="birthplace">Place of Birth:</label>
+                <input type="text" id="birthplace" name="birthplace" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Permanent Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+
+        <h3>Parent/Guardian Information</h3> 
+        
+            <div class="form-group">
+                <label for="father">Father's Name:</label>
+                <input type="text" id="father" name="father" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fatherno">Father's Contact No.:</label>
+                <input type="number" id="fatherno" name="fatherno" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mother">Mother's Name:</label>
+                <input type="text" id="mother" name="mother" required>
+            </div>
+
+            <div class="form-group">
+                <label for="motherno">Mother's Contact No.:</label>
+                <input type="number" id="motherno" name="motherno" required>
+            </div>
+
+            <div class="form-group">
+                <label for="guardian">Legal Guardian's Name:</label>
+                <input type="text" id="guardian" name="guardian" required>
+            </div>
+
+            <div class="form-group">
+                <label for="guardiannumber">Legal Guardian's Contact No.:</label>
+                <input type="number" id="guardiannumber" name="guardiannumber" required>
+            </div>
+
+        <h3>Track/Strand</h3>
+
+            <div class="form-group">
+                <label>Track:</label><br>
+                <input type="radio" id="academic" name="track" value="academic" required>
+                <label for="academic">Academic</label>
+                <input type="radio" id="tvltrack" name="track" value="tvltrack" required>
+                <label for="tvltrack">Technical-Vocational Livelihood</label>
+            </div>
+
+            <div class="form-group">
+                <label for="strand">Strand:</label>
+                <select id="strand" name="strand" required>
+                    <option value="stem">STEM (Science, Technology, Engineering, and Mathematics)</option>
+                    <option value="abm">ABM (Accountancy, Business, and Management)</option>
+                    <option value="humss">HUMSS (Humanities and Social Sciences)</option>
+                    <option value="tvl">TVL (Technical-Vocational Livelihood)</option>
+                </select>
+            </div>
+            
+            <button type="submit" name="submit">Submit</button>
+            <button type="reset" name="reset">Reset</button>
+        </form>
+    </div>
+</body>
+</html>
